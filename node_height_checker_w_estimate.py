@@ -191,7 +191,7 @@ def dusk_network_connect_status():
 def get_current_local_height():
     try:
         response = requests.post(
-            'http://127.0.0.1:8080/02/Chain',
+            'http://127.0.0.1:8008/02/Chain',
             headers={'Rusk-Version': '0.7.0-rc', 'Content-Type': 'application/json'},
             json={"topic": "gql", "data": "query { block(height: -1) { header { height } } }"}
         )
@@ -215,7 +215,7 @@ def get_global_height():
 def get_local_node_height():
     try:
         response = requests.post(
-            'http://127.0.0.1:8080/02/Chain',
+            'http://127.0.0.1:8008/02/Chain',
             headers={'Rusk-Version': '0.7', 'Content-Type': 'application/json'},
             json={"topic": "gql", "data": "query { block(height: -1) {header {height, timestamp}}}"}
         )
