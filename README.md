@@ -17,7 +17,7 @@ Original less featureful bash version still available. Instructions [here](https
 ## One-Liner
 
 ```bash
-curl https://raw.githubusercontent.com/Znomon/Dusk-ITN2-Node-Height-Tracker/main/node_height_checker_w_estimate.py | python3
+curl https://raw.githubusercontent.com/sultanmaa0/Dusk-ITN2-Node-Height-Tracker/main/node_height_checker_w_estimate.py | python3
 ```
 
 ## Output Example
