@@ -5,7 +5,7 @@ intervals=(1 5 10 30 60)
 
 # Function to get the current block height
 get_current_height() {
-    curl --silent --location --request POST 'http://127.0.0.1:8080/02/Chain' \
+    curl --silent --location --request POST 'http://127.0.0.1:8008/02/Chain' \
          --header 'Rusk-Version: 0.7.0-rc' \
          --header 'Content-Type: application/json' \
          --data-raw '{"topic": "gql", "data": "query { block(height: -1) { header { height } } }"}' | \
