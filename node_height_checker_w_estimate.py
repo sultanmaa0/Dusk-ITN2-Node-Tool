@@ -27,7 +27,7 @@ def count_blocks_mined():
     return num_lines
 
 def count_alive_nodes():
-    url = 'http://127.0.0.1:8080/02/Chain'
+    url = 'http://127.0.0.1:8008/02/Chain'
     headers = {
         'Rusk-Version': '0.7',
         'Content-Type': 'application/json'
